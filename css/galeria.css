@@ -1,0 +1,108 @@
+.galeria{
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+}
+.galeria__secao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    margin-left: 0;
+}
+.galeria__produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: static;
+    width: 176px;
+    height: 252px;
+    left: 0px;
+    top: 0px;
+    margin: 16px 10px;
+}
+.galeria__produtos:nth-child(1){
+    margin-left: 0;
+    border-left: 0;
+}
+.galeria__titulo{
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 2.2em;
+    color: #464646;  
+}
+.galeria__verTudo{
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 700;
+    color: #2A7AE4;
+    width: 97px;
+  
+    height: 24px;
+    left: 1036px;
+    top: 7px;
+    text-decoration: none;
+    
+}
+.galeria__verTudo:after{
+    content: url('../img/seta.png');
+  
+}
+.galeria__imagem{
+    width: 176px;
+    height: 174px;
+
+}
+.galeria__descricaoProduto {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    margin-bottom: 0;
+}
+.galeria__preco {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin-bottom: 1% 0%;
+}
+.galeria__verProduto{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    text-decoration: none;
+}
+@media screen and (max-width:768px) {    
+    .galeria{        
+        width: 90%;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .galeria__titulo{
+        border: 0;
+        font-size: 20px;
+    }
+    .galeria__produtos{
+        width: 120px;
+        height: auto;
+        margin: 20 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .galeria__imagem{
+        width: 110px;
+        height: 100px;
+    }
+    .galeria__verProduto {
+        font-size: 14px;
+    }
+}

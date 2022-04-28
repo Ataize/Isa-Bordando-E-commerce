@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\FrontEnd\\JS-na-web-crud-com-JavaScript-assincrono-projeto_inicial\\porjeto-inicial\\admin"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "admin"
+	}
+}

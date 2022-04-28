@@ -1,0 +1,113 @@
+.rodape{
+    background: #e0c2ca;
+    width: 100%;
+    height: 470px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+.rodape__aluraGeek{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+    margin: 5%; 
+  
+}
+.rodape__logo{
+    position: static;
+   
+}
+.rodape__informacoes{
+    display: flex;
+    flex-direction: column;   
+    width: 376px;
+    height: 234px;
+    left: 0px;
+    top: 129px;   
+}
+.rodape__informacao {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;    
+    color: #464646;
+    text-decoration: none;
+    margin: 14px 112px;
+    width: 100%;
+}
+.rodape__subtitulo {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+.rodape__formulario{
+    width: 100%;
+    height: 46px;
+    left: calc(50% - 560px/2);
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.rodape__nome{
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #1b0b0b;
+}
+.rodape__inputNome {
+    border: transparent;
+    width: 95%;
+}
+.rodape__mensagem{
+    border: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+}
+.rodape__mensagem:focus {
+    border-color: #2A7AE4;
+}
+.rodape__desenvolvedor{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rodape__btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+   
+}
+@media screen and (max-width:768px) {
+   
+    .rodape{
+        width: 100%;
+        height: auto;
+        margin: 0 0;
+    }
+    .rodape__aluraGeek{      
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;         
+    }
+    .rodape__informacoes{
+       
+        height: auto;
+        display: content;
+    }
+}

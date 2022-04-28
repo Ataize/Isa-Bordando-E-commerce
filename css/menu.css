@@ -1,0 +1,95 @@
+.menu {
+    display: flex;
+    width: 100%;
+    height: 215px;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu__principal {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    align-items: center;
+}
+.menu__logo{
+    padding-right: 1rem;
+}
+.menu__buscador{
+    display: flex;
+    align-items: center;
+}
+
+.menu__buscar{
+    background-image: url(../imagem/Icone.png);
+    background-repeat: no-repeat;
+    border: transparent;
+    width:30%;
+    height: 40px;
+    left: calc(50% - 393px/2 + 104px);
+    top: 5px;
+    padding: 8px 16px;
+    background-color: #efe4dc;
+   
+    border-radius: 20px;
+    font-size: .9rem;
+    background-position: right;
+    background-position-x: 90%;
+    
+}
+.menu__navBotao{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #9e5588;
+    text-transform: uppercase;
+}
+.Botao1{
+   
+    border: 1px solid #9e5588;
+    box-sizing: border-box;
+    position: static;
+    width: 150px;
+    height: 51px;
+    left: 954px;
+    top: 32px;
+    
+}
+.Botao1:hover{
+    cursor: pointer;
+    background: #D4E4FA;
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu__principal {
+        display: flex;
+        justify-content: space-around; 
+        width: 100%;
+    }
+    .menu__logo{
+        display: flex;
+        width: 30%;
+      
+        left: 16px;
+        top: 22px;
+        padding: 0 0;      
+        order: 0;
+        flex-grow: 0;
+    }
+    .menu__buscar{
+        display: none;
+    }
+    .Botao1{
+        width: 100px;
+    }
