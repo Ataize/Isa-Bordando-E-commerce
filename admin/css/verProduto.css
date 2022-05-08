@@ -1,0 +1,24 @@
+main{
+    background-color: #E5E5E5;
+}
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  
+}
+.produto-imagem {
+    width: 560px;
+    height: 403px;
+    left: 0px;
+    top: 0px;
+    padding: 20px;
+}
+.produto-informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+
+}

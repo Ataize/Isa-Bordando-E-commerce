@@ -13,6 +13,7 @@
     width: 100%;
     height: 38px;
     margin-left: 0;
+    padding: 30px;
 }
 .galeria__produtos{
     display: flex;
@@ -52,7 +53,7 @@
     
 }
 .galeria__verTudo:after{
-    content: url('../img/seta.png');
+    content: url('../imagem/seta.png');
   
 }
 .galeria__imagem{

@@ -5,38 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Geek</title>
+    <title>Isa Bordando</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\menu.css">
     <link rel="stylesheet" href="css\banner.css">
-    <link rel="stylesheet" href="css\banner-mobile.css">
     <link rel="stylesheet" href="css\galeria.css">
     <link rel="stylesheet" href="css\rodape.css">
     <link rel="stylesheet" href="css\login.css">
+    <link rel="stylesheet" href="css/todosProdutos.css">
 </head>
 
 <body>
     <header class="menu">
         <div class="menu__principal">
-          
                 <img class="menu__logo" src="imagem/logo-1.png" alt="Logo da Alura">
                 <input class="menu__buscar" type="text" placeholder="Buscar">
-          
             <button class="menu__login Botao1"><a class="menu__navBotao" href="index.html">Home</a></button>
         </div>
     </header>
     <main>
-        <section class="login">
-            <form action="" class="login__formulario">
-                <h1 class="login__titulo">Iniciar Sessão</h1>
-                <input type="email" class="login__input" placeholder="Escreva seu e-mail" required>
-                <input type="password" class="login__input" type="password" placeholder="Escreva sua senha" required>
-                <button type="submit" class="login__btn Botao2">Entrar</button>
-            </form>
-
+        <section class="todos">
+            <div class="galeria__secao todosDiv">
+                <h2 class="galeria__titulo todosTitulo">Todos os produtos</h2>
+                <button class="todosBtn Botao2" type="submit">Adicionar Produto</button>
+            </div>
+          <section class="todosProdutos" data-todos>
+              <!--JS-->
+          </section>
         </section>
     </main>
     <footer class="rodape">
@@ -68,5 +66,5 @@
         </section>
     </footer>
 </body>
-
+<script type="module" src="./js/verTodos.js"></script>
 </html>

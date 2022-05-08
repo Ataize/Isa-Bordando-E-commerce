@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isa Bordando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\banner.css">
+    <link rel="stylesheet" href="css\galeria.css">
+    <link rel="stylesheet" href="css\rodape.css">
+    <link rel="stylesheet" href="css\login.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="menu__principal">
+          
+                <img class="menu__logo" src="imagem/logo-1.png" alt="Logo da Alura">
+                <input class="menu__buscar" type="text" placeholder="Buscar">
+          
+            <button class="menu__login Botao1"><a class="menu__navBotao" href="index.html">Home</a></button>
+        </div>
+    </header>
+    <main>
+        <section class="login">
+            <form action="" class="login__formulario">
+                <h1 class="login__titulo">Iniciar Sessão</h1>
+                <input type="email" class="login__input" placeholder="Escreva seu e-mail" required>
+                <input type="password" class="login__input" type="password" placeholder="Escreva sua senha" required>
+                <button type="submit" class="login__btn Botao2">Entrar</button>
+            </form>
+
+        </section>
+    </main>
+    <footer class="rodape">
+        <section class="rodape__aluraGeek">
+            <div class="rodape__divLogo">
+                <img class="rodape__logo" src="imagem/logo-1.png" alt="Logo da Alura Geek">
+            </div>
+            <nav class="rodape__informacoes">
+                <a class="rodape__informacao" href="#">Quem somos</a>
+                <a class="rodape__informacao" href="#">Política de privacidade</a>
+                <a class="rodape__informacao" href="#">Programa fidelidade</a>
+                <a class="rodape__informacao" href="#">Nossas lojas</a>
+                <a class="rodape__informacao" href="#">Quero ser franqueado</a>
+                <a class="rodape__informacao" href="#">Anuncie aqui</a>
+            </nav>
+            <form class="rodape__faleConosco">
+                <p class="rodape__subtitulo">Fale conosco</p>
+                <div class="rodape__formulario">
+                    <label class="rodape__nome" for="text">Nome</label>
+                    <input class="rodape__inputNome" type="text" placeholder="André Lisboa" required>
+                </div>
+                <textarea class="rodape__mensagem" name="mensagem" id="" cols="30"
+                    rows="5">Escreva sua mensagem</textarea>
+                <button class="rodape__btn Botao2">Enviar mensagem</button>
+            </form>
+        </section>
+        <section class="rodape__desenvolvedor">
+            <p>Desenvolvido por Ataize Feitosa | 2022</p>
+        </section>
+    </footer>
+</body>
+
+</html>

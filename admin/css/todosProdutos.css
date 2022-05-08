@@ -1,0 +1,15 @@
+
+.todosDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  
+}
+.todosProdutos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.todosTitulo{
+    margin-left: 50px;
+}
