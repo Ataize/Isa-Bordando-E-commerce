@@ -1,6 +1,7 @@
 import { todosProdutos } from "./iniciarSessao.js"
 
 window.onload = () => {
+    
     let personalizados = document.getElementById('personalizados');
     let diversos = document.getElementById('diversos');
     let prontaEntrega = document.getElementById('prontaEntrega')
@@ -47,5 +48,4 @@ window.onload = () => {
    personalizados.innerHTML += html;
    prontaEntrega.innerHTML += html2;
    diversos.innerHTML += html3;
-   
 }

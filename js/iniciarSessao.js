@@ -1,9 +1,3 @@
-var botaoLogin = document.querySelector('.menu__login')
-
-botaoLogin.addEventListener('click', () => {
-    window.location.href = 'login.html'
-})
-
 export const todosProdutos = [
     {
         imagem: 'imagem/nome.jpg',
@@ -152,8 +146,3 @@ export const todosProdutos = [
     }  
    
 ]
-
-
-
-    
-
