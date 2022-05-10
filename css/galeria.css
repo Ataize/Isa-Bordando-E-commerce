@@ -10,16 +10,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 97%;
     height: 38px;
     margin-left: 0;
-    padding: 30px;
+   
 }
 .galeria__produtos{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
+    justify-content: center;
     
     position: static;
     width: 176px;
@@ -37,13 +38,14 @@
     font-size: 2em;
     line-height: 2.2em;
     color: #464646;  
+    padding: 30px 5px 30px 5px;
 }
 .galeria__verTudo{
     font-size: 16px;
     line-height: 19px;
     font-style: normal;
     font-weight: 700;
-    color: #2A7AE4;
+    color:#9e5588;
     width: 97px;
   
     height: 24px;
@@ -53,12 +55,13 @@
     
 }
 .galeria__verTudo:after{
-    content: url('../imagem/seta.png');
+    content: url('../imagem/Vector.png');
   
 }
 .galeria__imagem{
     width: 176px;
     height: 174px;
+    border-color: ;
 
 }
 .galeria__descricaoProduto {
@@ -80,7 +83,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #2A7AE4;
+    color:#9e5588;
     text-decoration: none;
 }
 @media screen and (max-width:768px) {    
@@ -91,7 +94,7 @@
     }
     .galeria__titulo{
         border: 0;
-        font-size: 20px;
+        font-size: 16px;
     }
     .galeria__produtos{
         width: 120px;

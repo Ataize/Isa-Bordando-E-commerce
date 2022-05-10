@@ -40,12 +40,12 @@
 .Botao2 {
    
     width: 150px;
-    height: 51px;
+    height: 61px;
     left: 0px;
     top: 119px;
 
     background: #e0c2ca;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 1em;
     line-height: 1em;
     color: #9e5588;

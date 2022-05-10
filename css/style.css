@@ -3,6 +3,7 @@ body, html{
     background-color: #FFFFFF;
     font-family: 'Raleway';
     overflow-x: hidden;
+    
 }
 textarea:focus, input:focus {
     box-shadow:0 0 0 0;
@@ -13,14 +14,14 @@ a {
     text-decoration: none;
 }   
    
-/*
+
 :root{
     .color1 {color: #1f2718;}
     .color2 {color: #484745;}
     .color3 {color: #9e5588;}
     .color4 {color: #e0c2ca;}
     .color5 {color: #eff3e1;}
-}*/
+} 
 @media screen and(max-width:768px) {
     body{
         width: min-content;

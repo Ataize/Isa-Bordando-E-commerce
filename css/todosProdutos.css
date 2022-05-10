@@ -9,7 +9,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.todosTitulo{
+/* }
+#todosTitulo{
     margin-left: 50px;
+    color: #464646;
+} */
+@media screen and (max-width:768px){
+    
+    .todosTitulo{
+        margin-left: 30px;
+    }
+    .galeria__titulo{
+        padding: 0;
+        font-size: 16px;
+    }
+    .Botao2{
+        
+    height: 35px;
+    width: 115px;
+    font-size: 12px;
+    }
 }
