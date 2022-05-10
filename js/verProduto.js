@@ -30,7 +30,7 @@ function criaSimilares(produtoDestaque) {
     let adiciona = ""
 
     const similares = todosProdutos.filter(item => {
-        if (item.categoria === categoria && item.nome != produtoDestaque.nome) {
+        if (item.categoria === categoria && item.id != produtoDestaque[0].id) {
             return item;
         }
     })
