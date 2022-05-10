@@ -67,6 +67,7 @@
     line-height: 16px;
     color: #464646;
     margin-bottom: 0;
+    justify-content: center;
 }
 .galeria__preco {
     font-weight: 700;

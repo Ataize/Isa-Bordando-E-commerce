@@ -1,45 +1,53 @@
 import { todosProdutos } from "./iniciarSessao.js"
 
-window.onload = ()=>{
-    let produto = document.querySelector('.produto')
+window.onload = () => {
+
     const url = new URL(window.location)
     const id = url.searchParams.get("id")
 
     let produtoDestaque = todosProdutos.filter(item => {
         return item.id === id
     })
+    adicionarProdutoDestaque(produtoDestaque);
+}
+
+
+function adicionarProdutoDestaque(produtoDestaque) {
+    const produto = document.querySelector('.produto')
+
     produto.childNodes[1].src = produtoDestaque[0].imagem
 
-    let informacoesProduto = produto.childNodes[3];
+    const informacoesProduto = produto.childNodes[3];
     informacoesProduto.childNodes[1].textContent = produtoDestaque[0].nome;
     informacoesProduto.childNodes[2].textContent = produtoDestaque[0].preco;
     informacoesProduto.childNodes[3].textContent = produtoDestaque[0].descricao;
 
-    let produtosSimilares = document.getElementById('produtosSimilares')
-    let categoria = produtoDestaque[0].categoria;
+    criaSimilares(produtoDestaque);
+}
+function criaSimilares(produtoDestaque) {
+    const produtosSimilares = document.getElementById('produtosSimilares')
+    const categoria = produtoDestaque[0].categoria;
     let adiciona = ""
 
-    let similares = todosProdutos.filter(item =>{
-         if(item.categoria === categoria && item.nome != produtoDestaque.nome){
-             return item;
-         }
+    const similares = todosProdutos.filter(item => {
+        if (item.categoria === categoria && item.nome != produtoDestaque.nome) {
+            return item;
+        }
     })
- 
-        similares.map((produto)=>{
 
-            let imagem = produto.imagem;
-            let preco = produto.preco;
-            let nome = produto.nome;
+    similares.map((produto) => {
+        const id = produto.id;
+        const imagem = produto.imagem;
+        const preco = produto.preco;
+        const nome = produto.nome;
 
-            adiciona += `<div class="galeria__produtos" data-galeria-produtos id="${id}"><a href="verProduto.html?id=${id}">
+        adiciona += `<div class="galeria__produtos" data-galeria-produtos id="${id}"><a href="verProduto.html?id=${id}">
             <img class="galeria__imagem" src="${imagem}" alt="Imagem do produto" data-produto-personalizado="imagem">
             <p class="galeria__descricaoProduto"data-produto-personalizado="nome">${nome}</p>
             <p class="galeria__preco"data-galeria-personalizado="preco">${preco}</p></a>
-            <a class="galeria__verProduto" href="verProduto.html?id=${id}" data-button="verProduto">Ver produto</a></div>`
-            
+            <a class="galeria__verProduto" href="verProduto.html?id=${produto.id}" data-button="verProduto">Ver produto</a></div>`
+
     })
-  
-       produtosSimilares.innerHTML += adiciona;
-    
-   
+
+    produtosSimilares.innerHTML += adiciona;
 }

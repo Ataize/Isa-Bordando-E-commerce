@@ -1,7 +1,8 @@
 import { todosProdutos } from "./iniciarSessao.js"
 
-window.onload = () => {
-    
+window.onload = adicionaProdutosHome()
+
+    function adicionaProdutosHome(){
     let personalizados = document.getElementById('personalizados');
     let diversos = document.getElementById('diversos');
     let prontaEntrega = document.getElementById('prontaEntrega')
