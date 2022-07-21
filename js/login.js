@@ -11,7 +11,7 @@ function validacao(email, passsword){
         alert("O campo e-mail deve ser preenchido!")
     } else if(!passsword){
         alert("O campo senha não foi preenchido!")
-    } else if ( email === "isa.aragao@hotmail.com" && passsword === "12345"){
+    } else if ( email === "isa.aragao@hotmail.com" && passsword === "123456"){
         alert("Acesso liberado")
     } else{
         alert("Acesso negado!")
