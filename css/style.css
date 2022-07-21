@@ -12,8 +12,31 @@ textarea:focus, input:focus {
 } 
 a {
     text-decoration: none;
-}   
-   
+}
+
+.input-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input {
+    border: 1px solid #df2525;
+    border-radius: 7px;
+}
+
+.input-container--invalido .input-label {
+    color: #df2525;
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: #df2525;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
 
 :root{
     .color1 {color: #1f2718;}

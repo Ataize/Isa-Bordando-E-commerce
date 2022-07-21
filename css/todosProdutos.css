@@ -3,18 +3,52 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
+    height: auto;
+    margin-left: 50px;
   
 }
 .todosProdutos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-/* }
-#todosTitulo{
-    margin-left: 50px;
-    color: #464646;
-} */
-@media screen and (max-width:768px){
+}
+.todosBtn{
+    width: 185px;
+}
+.alterarProduto{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.galeria__excluir{
+    background-image: url(../imagem/lixeira.png);
+    background-repeat: no-repeat;  
+    width: 20px;
+    height: 20px;
+    border: 0 none;
+    cursor: pointer;
+    position: absolute;
+    right: 33px;
+    top: 4.6%;
+    bottom: 81.61%;
+
+}
+.galeria__editar{
+    background-image: url(../imagem/editar.png);
+    background-repeat: no-repeat;  
+    width: 20px;
+    height: 20px; 
+    border: 0 none;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 4.6%;
+    bottom: 81.61%;
+
+}
+
+@media screen and (max-width:768px) {
     
     .todosTitulo{
         margin-left: 30px;
@@ -26,7 +60,14 @@
     .Botao2{
         
     height: 35px;
-    width: 115px;
+    width: 125px;
     font-size: 12px;
+    }
+    .todosDiv{
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 30px;
     }
 }

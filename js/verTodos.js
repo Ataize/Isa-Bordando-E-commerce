@@ -17,14 +17,25 @@ window.onload = function() {
        
 
         galeria += ` <div class="galeria__produtos" data-galeria-produtos>
+        <div class="alterarProduto">
+        <button class="galeria__excluir"></button>
+        <button class="galeria__editar"></button></div>        
         <img class="galeria__imagem" src="${imagem}" alt="Imagem do produto" data-produto-personalizado="imagem">
         <p class="galeria__descricaoProduto"data-produto-personalizado="nome">${nome}</p>
-        <p class="galeria__preco"data-galeria-personalizado="preco">${preco}</p></div>`
+        <p class="galeria__preco"data-galeria-personalizado="preco">${preco}</p>
+        </div>`
 
     })   
    
     
     tela.innerHTML= galeria;
-    console.log(galeria)
+   
+    var editar = document.querySelectorAll('.galeria__editar');
+    var excluir = document.querySelector('.galeria__excluir');
+
+    editar.addEventListener('click', ()=>{
+       
+      console.log(evento.target);
+    })
     
 }

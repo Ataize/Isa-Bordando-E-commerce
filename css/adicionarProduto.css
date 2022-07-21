@@ -1,0 +1,53 @@
+.adicionar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;    
+}
+.drop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.adicionar-imagem-drop{
+    max-width: 280px;
+    max-height: 250px;
+}
+.dropzone{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 200px;
+}
+.adicionar-produtos{
+    display: flex;
+}
+.adicionaTitulo{
+    width: 100%;
+}
+.adicionar-arquivos{
+    
+}
+.adicionar-arquivos-label {
+    border: 1px solid #2A7AE4;
+    text-align: center;
+    cursor: pointer;
+    width: 239px;
+    height: 51px;
+    padding: 20px;
+    
+
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+
+}
+.adicionar-arquivos-file{
+    display: none;
+}

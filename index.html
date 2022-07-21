@@ -19,7 +19,7 @@
     <header class="menu">
         <div class="menu__principal">           
                 <img class="menu__logo" src="imagem/logo-1.png" alt="Logo da Alura">
-                <input class="menu__buscar" type="text" placeholder="Buscar">
+                <input class="menu__buscar" type="text" placeholder="Buscar" id="filtrar-produto">
             <a href="login.html"><button class="menu__login Botao1" type="button">Login</button></a>
         </div>
     </header>
@@ -76,9 +76,11 @@
                 <p class="rodape__subtitulo">Fale conosco</p>
                 <div class="rodape__formulario">
                     <label class="rodape__nome" for="text">Nome</label>
-                    <input class="rodape__inputNome" type="text" placeholder="André Lisboa" maxlength="40" title="O campo deve conter nomáximo 40 caracteres" required>
+                    <input class="rodape__inputNome" type="text" data-tipo="nome" placeholder="André Lisboa" maxlength="40" title="O campo deve conter nomáximo 40 caracteres" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
-                <textarea class="rodape__mensagem" name="mensagem" id="" cols="30" rows="5" maxlength="120" title="O campo deve conter no máximo 120 caracteres" required>Escreva sua mensagem</textarea>
+                <textarea class="rodape__mensagem" name="mensagem" id="" data-tipo="mensagem" cols="30" rows="5" minlength="2" maxlength="120" placeholder="Escreva sua mensagem" title="O campo deve conter no máximo 120 caracteres" required></textarea>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
                 <button class="rodape__btn Botao2" type="submit">Enviar mensagem</button>
             </form>
         </section>
@@ -88,4 +90,6 @@
     </footer>
 </body>
 <script type="module" src="js\home.js"></script>
+<!-- <script src="js/filtra.js"></script> -->
+
 </html>

@@ -1,4 +1,6 @@
 import { todosProdutos } from "./iniciarSessao.js"
+//import {filtrar} from "./filtra.js"
+//import { valida } from "./validacao.js"
 
 window.onload = adicionaProdutosHome()
 
@@ -49,4 +51,7 @@ window.onload = adicionaProdutosHome()
    personalizados.innerHTML += html;
    prontaEntrega.innerHTML += html2;
    diversos.innerHTML += html3;
+  
+
+  // valida(input);
 }

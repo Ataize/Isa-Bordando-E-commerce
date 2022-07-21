@@ -15,26 +15,39 @@
     <link rel="stylesheet" href="css\galeria.css">
     <link rel="stylesheet" href="css\rodape.css">
     <link rel="stylesheet" href="css\login.css">
-    <link rel="stylesheet" href="css/todosProdutos.css">
+    <link rel="stylesheet" href="css/adicionarProduto.css">
 </head>
 
 <body>
     <header class="menu">
         <div class="menu__principal">
+          
                 <img class="menu__logo" src="imagem/logo-1.png" alt="Logo da Alura">
                 <input class="menu__buscar" type="text" placeholder="Buscar">
+          
             <button class="menu__login Botao1"><a class="menu__navBotao" href="index.html">Home</a></button>
         </div>
     </header>
     <main>
-        <section class="todos">
-            <div class="galeria__secao todosDiv">
-                <h2 class="galeria__titulo" id="todosTitulo">Todos os produtos</h2>
-               <a href="adicionarProduto.html"><button class="todosBtn Botao2" type="submit" >Adicionar Produto</button></a> 
-            </div>
-          <section class="todosProdutos" data-todos>
-              <!--JS-->
-          </section>
+        <section class="adicionar">
+            <form action="" class="adicionar-formulario">
+                <h1 class="galeria__titulo">Adicionar novo produto</h1>
+                <section class="drop">
+                    <div class="dropzone"><img class="adicionar-imagem-drop"src="./imagem/insert_photo.png" alt=""></div><p>Ou</p>
+                    <div class="adicionar-arquivos">
+                        <label class="adicionar-arquivos-label" for="arquivo">Procure no seu computador</label>
+                        <input class="adicionar-arquivos-file" id="arquivo" type="file" onchange="handleFiles(this.files)">
+                    </div>
+                </section>
+               
+                <input type="text" name="nomeProduto" class="login__input nome" placeholder="Nome do produto" required>
+              
+                <input type="" name="precoProduto" class="login__input preco"  placeholder="R$" required>
+                
+                <input type="text" name="descricaoProduto" class="login__input descricao" placeholder="Descrição">
+                <button type="submit" class="login__btn Botao2">Adicionar produto</button>
+            </form>
+
         </section>
     </main>
     <footer class="rodape">
@@ -65,6 +78,7 @@
             <p>Desenvolvido por Ataize Feitosa | 2022</p>
         </section>
     </footer>
+    <script src="./js/adiciona.js"></script>
 </body>
-<script type="module" src="./js/verTodos.js"></script>
+
 </html>
