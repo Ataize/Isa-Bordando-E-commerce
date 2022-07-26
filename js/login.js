@@ -14,6 +14,6 @@ function validacao(email, passsword){
     } else if ( email === "isa.aragao@hotmail.com" && passsword === "123456"){
         alert("Acesso liberado")
     } else{
-        alert("Acesso negado!")
+        alert("E-mail ou senha incorretos")
     }
 }
